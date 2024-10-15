@@ -7,17 +7,18 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        outfit: ['Outfit', 'sans-serif'],
+        figtree: ['Figtree', 'sans-serif'],
       },
       colors: {
-        slate: {
-          300: '#D5E1EF',
-          500: '#68778D',
-          900: '#1F314F'
-        },
+        yellow: '#F4D04E',
+        gray: {
+          950: '#111111',
+          500: '#6B6B6B'
+        }
       },
       boxShadow: {
-        'custom': 'rgba(0, 0, 0, 4.77%) 0px 0px 25px'
+        'custom': 'rgba(0, 0, 0, 100%) 8px 8px',
+        'animate': 'rgba(0, 0, 0, 100%) 16px 16px'
       },
     },
   },

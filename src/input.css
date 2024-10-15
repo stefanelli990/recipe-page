@@ -1,19 +1,27 @@
 @tailwind base;
-h1 {
-    font-size: 22px;
-    line-height: 120%;
-    font-weight: 700;
-}
-p {
-    font-size: 15px;
-    letter-spacing: 0.2px;
-    line-height: 140%;
+.text-preset-1,
+.text-preset-2,
+.text-preset-3,
+.text-preset-3-bold {
+    line-height: 150%;
 }
 @tailwind components;
-@tailwind utilities;
+.text-preset-1 {
+    @apply font-extrabold text-[20px] sm:text-[24px];
+}
+.text-preset-2 {
+    @apply font-medium text-[14px] sm:text-[16px];
+}
+.text-preset-3 {
+    @apply font-medium text-[12px] sm:text-[14px];
+}
+.text-preset-3-bold {
+    @apply font-extrabold text-[12px] sm:text-[14px];
+}
 
+@tailwind utilities;
 @layer base {
     body {
-        @apply font-outfit;
+        @apply font-figtree text-gray-950;
     }
 }
