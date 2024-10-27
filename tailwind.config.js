@@ -7,20 +7,25 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        figtree: ['Figtree', 'sans-serif'],
+        outfit: ['Outfit', 'sans-serif'],
+        youngSerif: ['Young Serif', 'serif']
       },
       colors: {
-        yellow: '#F4D04E',
-        gray: {
-          950: '#111111',
-          500: '#6B6B6B'
+        stone: {
+          100: 'hsl(30, 54%, 90%)',
+          150: 'hsl(30, 18%, 87%)',
+          600: 'hsl(30, 10%, 34%)',
+          900: 'hsl(24, 5%, 18%)'
+        },
+        brown: {
+          800: 'hsl(14, 45%, 36%)'
+        },
+        rose: {
+          50: 'hsl(330, 100%, 98%)',
+          800: 'hsl(332, 51%, 32%)'
         }
-      },
-      boxShadow: {
-        'custom': 'rgba(0, 0, 0, 100%) 8px 8px',
-        'animate': 'rgba(0, 0, 0, 100%) 16px 16px'
-      },
-    },
+      }
+    }
   },
   plugins: [],
 }

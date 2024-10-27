@@ -1,27 +1,39 @@
 @tailwind base;
-.text-preset-1,
-.text-preset-2,
-.text-preset-3,
-.text-preset-3-bold {
-    line-height: 150%;
-}
 @tailwind components;
-.text-preset-1 {
-    @apply font-extrabold text-[20px] sm:text-[24px];
-}
-.text-preset-2 {
-    @apply font-medium text-[14px] sm:text-[16px];
-}
-.text-preset-3 {
-    @apply font-medium text-[12px] sm:text-[14px];
-}
-.text-preset-3-bold {
-    @apply font-extrabold text-[12px] sm:text-[14px];
-}
-
 @tailwind utilities;
+
 @layer base {
     body {
-        @apply font-figtree text-gray-950;
+        @apply font-outfit text-gray-950 text-[15px];
+    }
+    section {
+        @apply m-8;
+    }
+    hr {
+        @apply mx-8;
+    }
+    h1 {
+        @apply mb-4 font-youngSerif text-4xl;
+    }
+    h2 {
+        @apply mb-4 font-youngSerif text-3xl text-rose-800;
+    }
+    h3 {
+        @apply mb-4 font-bold text-xl text-rose-800;
+    }
+    ul {
+        @apply marker:text-rose-800 pl-2 ml-1 space-y-2 list-disc;
+    }
+    ol {
+        @apply marker:text-rose-800 pl-2 ml-1 space-y-2 list-decimal marker:font-sans marker:font-bold;
+    }
+    ul li {
+        @apply ml-3 pl-4;
+    }
+    ol li {
+        @apply ml-3 pl-4;
+    }
+    li span {
+        @apply mr-1 font-semibold;
     }
 }

@@ -3,33 +3,82 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Blog preview card</title>
+  <title>Recipe page</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Young+Serif&display=swap" rel="stylesheet">
   <link href="src/output.css" rel="stylesheet">
   <link rel="icon" type="image/png" sizes="32x32" href="src/assets/favicon-32x32.png">
 </head>
-<body class="bg-yellow p-6 min-h-screen flex justify-center items-center flex-col gap-4 ">
+<body class="bg-stone-100 min-h-screen flex justify-center items-center flex-col">
   <main class="flex-1 grid place-content-center">
-    <div class="bg-white max-w-[384px] p-6 space-y-6 rounded-[20px] outline outline-1 outline-gray-950 shadow-custom group cursor-pointer duration-300 hover:shadow-animate">
-        <div class="rounded-[10px] h-[200px] overflow-hidden">
-          <img class="object-cover w-full h-full" src="src/assets/illustration-article.svg" alt="Illustration article">
+    <div class="bg-white md:rounded-2xl md:max-w-[680px] md:my-20">
+        <div class="md:rounded-lg overflow-hidden md:m-8">
+          <img src="src/assets/image-omelette.jpeg" alt="Omelette">
         </div>
-        <div class="space-y-3">
-            <span class="text-preset-3-bold px-3 py-1 inline-block bg-yellow rounded">Learning</span>
-            <p class="text-preset-3">Published 21 Dec 2023</p>
-            <h1 class="text-preset-1 group-hover:text-yellow duration-200">HTML & CSS foundations</h1>
-            <p class="text-preset-2 text-gray-500">These languages are the backbone of every website, defining structure, content, and presentation.</p>
-        </div>
-        <div class="flex items-center space-x-3">
-          <img class="w-8 h-8 rounded-full" src="src/assets/image-avatar.webp" alt="Avatar">
-          <p class="text-preset-3-bold">Greg Hooper</p>
-        </div>
+        <section>
+          <h1>Simple Omelette Recipe</h1>
+          <p>An easy and quick dish, perfect for any meal. This classic omelette combines beaten eggs cooked to perfection, optionally filled with your choice of cheese, vegetables, or meats.</p>
+        </section>
+        <section class="p-6 rounded-lg bg-rose-50">
+          <h3>Preparation time</h3>
+            <ul class="">
+              <li><span>Total:</span>Approximately 10 minutes</li>
+              <li><span>Preparation:</span>5 minutes</li>
+              <li><span>Cooking:</span>5 minutes</li>
+            </ul>
+        </section>
+        <section>
+          <h2>Ingredients</h2>
+          <ul>
+            <li>2-3 large eggs</li>
+            <li>Salt, to taste</li>
+            <li>Pepper, to taste</li>
+            <li>1 tablespoon of butter or oil</li>
+            <li>Optional fillings: cheese, diced vegetables, cooked meats, herbs</li>
+          </ul>
+        </section>
+        <hr>
+        <section>
+          <h2>Instructions</h2>
+          <ol>
+            <li><span>Beat the eggs:</span>In a bowl, beat the eggs with a pinch of salt and pepper until they are well mixed. You can add a tablespoon of water or milk for a fluffier texture.</li>
+            <li><span>Heat the pan:</span>Place a non-stick frying pan over medium heat and add butter or oil.</li>
+            <li><span>Cook the omelette:</span>Once the butter is melted and bubbling, pour in the eggs. Tilt the pan to ensure the eggs evenly coat the surface.</li>
+            <li><span>Add fillings (optional):</span>When the eggs begin to set at the edges but are still slightly runny in the middle, sprinkle your chosen fillings over one half of the omelette.</li>
+            <li><span>Fold and serve:</span>As the omelette continues to cook, carefully lift one edge and fold it over the fillings. Let it cook for another minute, then slide it onto a plate.</li>
+            <li><span>Enjoy:</span>Serve hot, with additional salt and pepper if needed.</li>
+          </ol>
+        </section>
+        <hr>
+        <section>
+          <h2>Nutrition</h2>
+          <p>The table below shows nutritional values per serving without the additional fillings.</p>
+          <table class="table-auto w-full mt-3">
+            <tbody>
+              <tr class="border-b border-b-gray-200">
+                <td class="w-1/2 px-6 py-3">Calories</td>
+                <td class="w-1/2 px-6 py-3 font-bold text-rose-800">277kcal</td>
+              </tr>
+              <tr class="border-b border-b-gray-200">
+                <td class="w-1/2 px-6 py-3">Carbs</td>
+                <td class="w-1/2 px-6 py-3 font-bold text-rose-800">0g</td>
+              </tr>
+              <tr class="border-b border-b-gray-200">
+                <td class="w-1/2 px-6 py-3">Protein</td>
+                <td class="w-1/2 px-6 py-3 font-bold text-rose-800">20g</td>
+              </tr>
+              <tr>
+                <td class="w-1/2 px-6 py-3">Fat</td>
+                <td class="w-1/2 px-6 py-3 font-bold text-rose-800">22g</td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
     </div>
   </main>
-  <footer>
-    <p class="text-preset-2 text-center">Challenge by <a class="underline" href="https://www.frontendmentor.io/challenges/blog-preview-card-ckPaj01IcS" target="_blank">Frontend Mentor</a>. Coded by <a class="underline" href="https://github.com/stefanelli990" target="_blank">stefanelli990</a>.</p>
+  <footer class="bg-white md:bg-transparent w-full">
+    <p class="text-preset-2 text-center mx-8 my-4">Challenge by <a class="underline" href="https://www.frontendmentor.io/challenges/recipe-page-KiTsR8QQKm" target="_blank">Frontend Mentor</a>. Coded by <a class="underline" href="https://github.com/stefanelli990" target="_blank">stefanelli990</a>.</p>
   </footer>
 </body>
 </html>
